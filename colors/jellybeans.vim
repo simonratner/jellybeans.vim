@@ -299,7 +299,7 @@ endif
 if version >= 700
   call s:X("CursorLine","","1c1c1c","","",s:termBlack)
   call s:X("CursorColumn","","1c1c1c","","",s:termBlack)
-  call s:X("MatchParen","ffffff","80a090","bold","","DarkCyan")
+  call s:X("MatchParen","f0a0c0","302028","underline","Magenta","DarkMagenta")
 
   call s:X("TabLine","000000","b0b8c0","italic","",s:termBlack)
   call s:X("TabLineFill","9098a0","","","",s:termBlack)
@@ -310,12 +310,12 @@ if version >= 700
   call s:X("PmenuSel","101010","eeeeee","",s:termBlack,"White")
 endif
 
-call s:X("Visual","","404040","","",s:termBlack)
-call s:X("Cursor","","b0d0f0","","","")
+call s:X("Visual","","000000","","",s:termBlack)
+call s:X("Cursor","","998888","","","")
 
 call s:X("LineNr","605958","151515","none",s:termBlack,"")
-call s:X("Comment","888888","","italic","Grey","")
-call s:X("Todo","808080","","bold","White",s:termBlack)
+call s:X("Comment","504948","","italic","DarkGrey","")
+call s:X("Todo","605958","302928","italic","","")
 
 call s:X("StatusLine","000000","dddddd","italic","","White")
 call s:X("StatusLineNC","ffffff","403c41","italic","White","Black")
@@ -339,17 +339,17 @@ call s:X("StringDelimiter","556633","","","DarkGreen","")
 call s:X("Identifier","c6b6ee","","","LightCyan","")
 call s:X("Structure","8fbfdc","","","LightCyan","")
 call s:X("Function","fad07a","","","Yellow","")
-call s:X("Statement","8197bf","","","DarkBlue","")
-call s:X("PreProc","8fbfdc","","","LightBlue","")
+call s:X("Statement","8197bf","","","Blue","")
+call s:X("PreProc","8fbfdc","","","DarkBlue","")
 
-hi! link Operator Normal
+hi! link Operator Statement
 
 call s:X("Type","ffb964","","","Yellow","")
 call s:X("NonText","606060","151515","",s:termBlack,"")
 
-call s:X("SpecialKey","444444","1c1c1c","",s:termBlack,"")
+call s:X("SpecialKey","cc0000","","","DarkRed","")
 
-call s:X("Search","f0a0c0","302028","underline","Magenta","")
+call s:X("Search","f0a0c0","302028","underline","Magenta","DarkMagenta")
 
 call s:X("Directory","dad085","","","Yellow","")
 call s:X("ErrorMsg","","902020","","","DarkRed")
@@ -360,10 +360,14 @@ call s:X("Question","65C254","","","Green","")
 
 " Spell Checking
 
-call s:X("SpellBad","","902020","underline","","DarkRed")
-call s:X("SpellCap","","0000df","underline","","Blue")
-call s:X("SpellRare","","540063","underline","","DarkMagenta")
-call s:X("SpellLocal","","2D7067","underline","","Green")
+"call s:X("SpellBad","","902020","undercurl","Black","DarkRed")
+"call s:X("SpellCap","","0000df","undercurl","Black","DarkBlue")
+"call s:X("SpellRare","","540063","undercurl","Black","DarkMagenta")
+"call s:X("SpellLocal","","2D7067","undercurl","Black","DarkGreen")
+call s:X("SpellBad","","","undercurl","Black","DarkRed")
+call s:X("SpellCap","","","undercurl","Black","DarkBlue")
+call s:X("SpellRare","","","undercurl","Black","DarkMagenta")
+call s:X("SpellLocal","","","undercurl","Black","DarkGreen")
 
 " Diff
 
@@ -391,7 +395,7 @@ hi! link phpArrayPair Operator
 " Ruby
 
 hi! link rubySharpBang Comment
-call s:X("rubyClass","447799","","","DarkBlue","")
+call s:X("rubyClass","447799","","","Blue","")
 call s:X("rubyIdentifier","c6b6fe","","","Cyan","")
 hi! link rubyConstant Type
 hi! link rubyFunction Function

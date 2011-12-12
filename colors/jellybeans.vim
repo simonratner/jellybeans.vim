@@ -287,7 +287,7 @@ fun! s:X(group, fg, bg, attr, lcfg, lcbg)
 endfun
 " }}}
 
-call s:X("Normal","e8e8d3","151515","","White","")
+call s:X("Normal","e8e8d3","151515","","Grey","")
 set background=dark
 
 if !exists("g:jellybeans_use_lowcolor_black") || g:jellybeans_use_lowcolor_black
@@ -310,14 +310,14 @@ if version >= 700
   call s:X("PmenuSel","101010","eeeeee","",s:termBlack,"White")
 endif
 
-call s:X("Visual","","000000","","",s:termBlack)
+call s:X("Visual","","000000","","White","DarkGrey")
 call s:X("Cursor","","998888","","","")
 
-call s:X("LineNr","605958","151515","none",s:termBlack,"")
+call s:X("LineNr","605958","151515","none","DarkGrey",s:termBlack)
 call s:X("Comment","504948","","italic","DarkGrey","")
-call s:X("Todo","605958","302928","italic","","")
+call s:X("Todo","605958","302928","italic","Black","DarkGrey")
 
-call s:X("StatusLine","000000","dddddd","italic","","White")
+call s:X("StatusLine","000000","dddddd","italic","Black","White")
 call s:X("StatusLineNC","ffffff","403c41","italic","White","Black")
 call s:X("VertSplit","777777","403c41","italic",s:termBlack,s:termBlack)
 call s:X("WildMenu","f0a0c0","302028","","Magenta","")

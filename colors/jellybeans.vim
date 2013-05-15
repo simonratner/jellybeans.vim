@@ -314,8 +314,8 @@ call s:X("Visual","","000000","","White","DarkGrey")
 call s:X("Cursor","","998888","","","")
 
 call s:X("LineNr","605958","151515","none","DarkGrey",s:termBlack)
-call s:X("Comment","504948","","italic","DarkGrey","")
-call s:X("Todo","605958","302928","italic","Black","DarkGrey")
+call s:X("Comment","525150","","italic","DarkGrey","")
+call s:X("Todo","605958","323130","italic","Black","DarkGrey")
 
 call s:X("StatusLine","000000","dddddd","italic","Black","White")
 call s:X("StatusLineNC","ffffff","403c41","italic","White","Black")

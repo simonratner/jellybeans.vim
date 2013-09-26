@@ -310,16 +310,16 @@ if version >= 700
   call s:X("PmenuSel","101010","eeeeee","",s:termBlack,"White")
 endif
 
-call s:X("Visual","","000000","","White","DarkGrey")
+call s:X("Visual","","403c40","","White","DarkGrey")
 call s:X("Cursor","","998888","","","")
 
 call s:X("LineNr","605958","151515","none","DarkGrey",s:termBlack)
 call s:X("Comment","525150","","italic","DarkGrey","")
 call s:X("Todo","605958","323130","italic","Black","DarkGrey")
 
-call s:X("StatusLine","000000","dddddd","italic","Black","White")
-call s:X("StatusLineNC","ffffff","403c41","italic","White","Black")
-call s:X("VertSplit","777777","403c41","italic",s:termBlack,s:termBlack)
+call s:X("StatusLine","e0e0e0","403c40","none","Black","DarkGrey")
+call s:X("StatusLineNC","808080","403c40","none","White","Black")
+call s:X("VertSplit","808080","403c40","italic",s:termBlack,s:termBlack)
 call s:X("WildMenu","f0a0c0","302028","","Magenta","")
 
 call s:X("Folded","a0a8b0","384048","italic",s:termBlack,"")
